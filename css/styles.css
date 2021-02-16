@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    max-width: 1500px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 7.5% 7px 7.5%;
+    padding-top: 20px;
+}    
+
+.logo {
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+a.link:hover {
+    color:rgb(136, 241, 255);
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 10px 0px 0px 20px;
+}
+
+
+/* Images
+.Alicia {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: auto;
+    border: solid   rgb(39, 39, 39)   1px;
+    box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
+    }    
+
+.Kristy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: auto;
+    border: solid   rgb(39, 39, 39)   1px;
+    box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
+        }  */
+
+
+.carousel-container{
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    border: solid   rgb(39, 39, 39)   1px;
+}
+
+.carousel-slide{
+    display: flex;
+    width: 100%;
+    height: 850px;
+}
