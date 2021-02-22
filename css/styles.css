@@ -1,3 +1,7 @@
+/* Obviously not "Mobile First", but I was just wanting to 
+get the hang writing something things. It turned into more then
+I meant for it to become. Restart? Rework the code for Mobile? */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -23,7 +27,7 @@ header {
 }    
 
 /* --- Nav Bar and Logo --- */
-
+            /* --- Gotta figure out the stacked menu for smaller screens --- */
 .logo {
     text-decoration: none;
     color: rgb(39, 39, 39);
@@ -49,7 +53,10 @@ a.link:hover {
 }
 
 /* --- Carousel Gallery --- */
-
+            /* Messin' with Smaller Screen Sizes */ 
+@media screen and (min-width: 650px) {
+            /* --- Can I get this to scale the carousels size down as 
+                    the browsers width gets smaller? --- */
 .carousel-container{
     display: flex;
     width: 85%;
@@ -61,7 +68,9 @@ a.link:hover {
 .carousel-slide{
     display: flex;
     height: 850px;
-    width: 100%;
+    width: auto;
+}
+
 }
 
 /* ---Button --- */
@@ -69,35 +78,44 @@ a.link:hover {
 .btn-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; /* - Works when not over image, breaks when over image??? See %%% in #prev/nextBtn */
     margin-top: 35%;
     z-index: 5;
     color:rgb(75, 75, 75);
     background-color: rgba(39, 39, 39, 0);
+    cursor: pointer;
 }
-
+            /* - Buttons Act odd with websites width - */
 #prevBtn {
     display: flex;
     background-color: rgba(139, 0, 0, 0);
-    margin-left: 200%;
+    margin-left: 200%; /* What's the deal with these %%%? */
 }
 
 #nextBtn {
     display: flex;
-    margin-left: 7500%;
+    margin-left: 7500%; /* What's the deal with these %%%? */ 
     background-color: rgba(39, 39, 39, 0);
 }
 
 /* Images */
-.Alicia {
+            /* --- Messing with Mobile / Smaller Screen Layout ---
+                   This is working well, except the extra space above
+                   the photos in the body... */
+@media screen and (max-width: 650px) {
+.px {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2%;
     width: 85%;
     height: auto;
     border: solid   rgb(39, 39, 39)   1px;
     box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
     }    
+
+}  
+            /*  - Currently only used for gallery.html  - */
 .Kristy {
     display: block;
     margin-left: auto;
