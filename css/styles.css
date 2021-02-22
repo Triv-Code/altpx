@@ -6,11 +6,12 @@
 }
 
 body {
-    display: flex;
+    display: block;
     justify-content: center;
     flex-direction: column;
     max-width: 1500px;
     margin:auto;
+    height: auto;
 }
 
 header {
@@ -20,6 +21,8 @@ header {
     margin: 0px 7.5% 7px 7.5%;
     padding-top: 20px;
 }    
+
+/* --- Nav Bar and Logo --- */
 
 .logo {
     text-decoration: none;
@@ -45,28 +48,7 @@ a.link:hover {
     padding: 10px 0px 0px 20px;
 }
 
-
-/* Images
-.Alicia {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
-    height: auto;
-    border: solid   rgb(39, 39, 39)   1px;
-    box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
-    }    
-
-.Kristy {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
-    height: auto;
-    border: solid   rgb(39, 39, 39)   1px;
-    box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
-        } */
-
+/* --- Carousel Gallery --- */
 
 .carousel-container{
     display: flex;
@@ -78,9 +60,11 @@ a.link:hover {
 
 .carousel-slide{
     display: flex;
-    width: 100%;
     height: 850px;
+    width: 100%;
 }
+
+/* ---Button --- */
 
 .btn-container {
     display: flex;
@@ -103,3 +87,23 @@ a.link:hover {
     margin-left: 7500%;
     background-color: rgba(39, 39, 39, 0);
 }
+
+/* Images */
+.Alicia {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: auto;
+    border: solid   rgb(39, 39, 39)   1px;
+    box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
+    }    
+.Kristy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: auto;
+    border: solid   rgb(39, 39, 39)   1px;
+    box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
+        } 
