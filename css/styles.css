@@ -65,14 +65,15 @@ a.link:hover {
     height: auto;
     border: solid   rgb(39, 39, 39)   1px;
     box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
-        }  */
+        } */
 
 
 .carousel-container{
+    display: flex;
     width: 85%;
     margin: auto;
     overflow: hidden;
-    /*border: solid 2px rgb(39, 39, 39);*/
+    border: solid 2px rgb(39, 39, 39);
 }
 
 .carousel-slide{
@@ -84,10 +85,21 @@ a.link:hover {
 .btn-container {
     display: flex;
     flex-direction: row;
-    z-index: -1;
     justify-content: space-between;
+    margin-top: 35%;
+    z-index: 5;
+    color:rgb(75, 75, 75);
+    background-color: rgba(39, 39, 39, 0);
 }
 
-.btn {
-    border: none;
+#prevBtn {
+    display: flex;
+    background-color: rgba(139, 0, 0, 0);
+    margin-left: 200%;
+}
+
+#nextBtn {
+    display: flex;
+    margin-left: 7500%;
+    background-color: rgba(39, 39, 39, 0);
 }

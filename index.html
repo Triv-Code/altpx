@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>altpx portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo"><h1>Liz Sucks</h1></a>
+        <a href="index.html" class="logo"><h1>altpx</h1></a>
         <nav>
             <ul class="nav_links">
                 <li><a href="index.html" class="link">Home</a></li>
@@ -20,19 +22,23 @@
     </header>
 
     <div class="carousel-container">
+        <div class="btn-container">
+            <i class="fas fa-angle-left" id="prevBtn"></i>
+            <i class="fas fa-angle-right" id="nextBtn"></i>
+
+        </div>
         <div class="carousel-slide">
             <img src="img/mono/Alicia.jpg" id="lastClone" alt="">
             <img src="img/mono/Kristy.jpg" alt="">
             <img src="img/mono/Ralph.jpg" alt="">
-           <!-- <img src="img/mono/Alicia.jpg" id="firstClone"  alt="">-->
+           <img src="img/mono/Alicia.jpg" id="firstClone"  alt="">
         </div>
-        <div class="btn-container">
+        <!--<div class="btn-container">
             <button class="btn" id="prevBtn">&#10094;</button>
             <button class="btn" id="nextBtn">&#10095;</button>
-        </div>
+        </div>-->
     </div>
     
-<!--   <img src="img/mono/Alicia.jpg" alt="Alicia" class="Alicia">-->
     <script src="js/app.js"></script>
 </body>
 </html>
