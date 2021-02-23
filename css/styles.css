@@ -123,36 +123,46 @@ header {
     width: 25%;
     border: solid 2px rgb(39, 39, 39);
     box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
+    margin-left: 7.5%;
 }
 
-.contactFlex {
-    display: flex;
-    flex-direction: row;
-    width: 85%;
-    margin: auto;
+form {
+    float: right;
+    width: 57%;
+    margin-right: 7.5%;
 }
 
-.address {
-    align-self: center;
-    letter-spacing: 1.5px;
-    
-}
-
-.contactForm {
-    display: block;
-    margin:auto;
-}
-
-.formName {
-    display: inline-block;
-}
-
- /* ---- Width Adjustments always mess with photo? --- */
 input[type=text], select {
-    margin-bottom: 7.5%;
+    margin-bottom: 2%;
     display: inline-block;
     border: 2px solid rgb(39, 39, 39);
-  }
+    padding: 12px;
+    margin-top: 0;
+    margin-bottom: 1.5%;
+    width: 65%;
+}
+                        /*----- Not Happy with how things are lining up visually ---*/
+textarea {
+    resize: none;
+    border: solid 2px rgb(39, 39, 39);
+    width: 67.35%;
+    height: 200px;
+}
+
+.submit {
+    float: right;
+    margin-right: 31.75%;
+    margin-top: 1%;
+    background-color:white;
+    border: solid 2px rgb(39, 39, 39);
+    width: 15%;
+    height: 25px;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: skyblue;
+}
 
     /* Old Code, Might need.... {
     box-sizing: border-box;
@@ -189,4 +199,28 @@ a.link:hover {
     display: inline-block;
     padding: 10px 0px 0px 20px;
 }       
+
+/*
+.contactFlex {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: auto;
+}
+
+.address {
+    align-self: center;
+    letter-spacing: 1.5px;
+    
+}
+
+.contactForm {
+    display: block;
+    margin:auto;
+}
+
+.formName {
+    display: inline-block;
+}
+
 */
