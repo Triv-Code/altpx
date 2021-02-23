@@ -1,20 +1,15 @@
 /* Obviously not "Mobile First", but I was just wanting to 
 get the hang writing something things. It turned into more then
 I meant for it to become. Restart? Rework the code for Mobile? */
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    background-color: white;
-}
-
 body {
-    display: block;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     max-width: 1500px;
-    margin:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 0;
+    padding-top: 0;
     height: auto;
 }
 
@@ -22,8 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 7.5% 7px 7.5%;
-    padding-top: 20px;
+    margin: -.5% 7.5% -1% 7.5%;
 }    
 
 /* --- Nav Bar and Logo --- */
@@ -33,27 +27,42 @@ header {
     color: rgb(39, 39, 39);
 }
 
-.link {
-    text-decoration: none;
-    color:rgb(39, 39, 39);
-}
-
-
-a.link:hover {
-    color:rgb(136, 241, 255);
-}
-
 .nav_links {
-    list-style: none;
+    margin-bottom: 2.25%;
 }
 
 .nav_links li {
-    display: inline-block;
-    padding: 10px 0px 0px 20px;
+    display: inline-flex;
+}  
+
+.link  {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px 0px 0px 10px;
+}
+
+.link:hover {
+    color:rgb(136, 241, 255);
+}
+
+
+@media screen and (max-width: 650px) {
+    .px {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
+        width: 85%;
+        height: auto;
+        border: solid   rgb(39, 39, 39)   1px;
+        box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
+        }    
 }
 
 /* --- Carousel Gallery --- */
-            /* Messin' with Smaller Screen Sizes */ 
+            /* Messin' with Smaller Screen Sizes  */
 @media screen and (min-width: 650px) {
             /* --- Can I get this to scale the carousels size down as 
                     the browsers width gets smaller? --- */
@@ -85,7 +94,8 @@ a.link:hover {
     background-color: rgba(39, 39, 39, 0);
     cursor: pointer;
 }
-            /* - Buttons Act odd with websites width - */
+            /* - Buttons Act odd with websites width ---
+                 When "Mobile" size, adds the extra space to the body. Gotta make them smaller */
 #prevBtn {
     display: flex;
     background-color: rgba(139, 0, 0, 0);
@@ -94,16 +104,11 @@ a.link:hover {
 
 #nextBtn {
     display: flex;
-    margin-left: 7500%; /* What's the deal with these %%%? */ 
+    margin-left: 7500%; /* What's the deal with these %%%? */
     background-color: rgba(39, 39, 39, 0);
 }
 
-/* Images */
-            /* --- Messing with Mobile / Smaller Screen Layout ---
-                   This is working well, except the extra space above
-                   the photos in the body... */
-@media screen and (max-width: 650px) {
-.px {
+.px1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -112,10 +117,15 @@ a.link:hover {
     height: auto;
     border: solid   rgb(39, 39, 39)   1px;
     box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
-    }    
+    }
 
-}  
-            /*  - Currently only used for gallery.html  - */
+    /* Old Code, Might need.... {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}  --- I don't think I need this anymore ---
+
 .Kristy {
     display: block;
     margin-left: auto;
@@ -125,3 +135,23 @@ a.link:hover {
     border: solid   rgb(39, 39, 39)   1px;
     box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
         } 
+
+ .link {
+    text-decoration: none;
+    color:rgb(39, 39, 39);
+}
+
+
+a.link:hover {
+    color:rgb(136, 241, 255);
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 10px 0px 0px 20px;
+}       
+*/
