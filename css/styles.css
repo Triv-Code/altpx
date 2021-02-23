@@ -66,46 +66,45 @@ header {
 @media screen and (min-width: 650px) {
             /* --- Can I get this to scale the carousels size down as 
                     the browsers width gets smaller? --- */
-.carousel-container{
-    display: flex;
-    width: 85%;
-    margin: auto;
-    overflow: hidden;
-    border: solid 2px rgb(39, 39, 39);
-}
+    .carousel-container{
+        display: flex;
+        width: 85%;
+        margin: auto;
+        overflow: hidden;
+        border: solid 2px rgb(39, 39, 39);
+    }
 
-.carousel-slide{
-    display: flex;
-    height: 850px;
-    width: auto;
-}
+    .carousel-slide{
+        display: flex;
+        height: 850px;
+        width: auto;
+    }
 
-}
+    .btn-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* - Works when not over image, breaks when over image??? See %%% in #prev/nextBtn */
+        margin-top: 35%;
+        z-index: 5;
+        color:rgb(75, 75, 75);
+        background-color: rgba(39, 39, 39, 0);
+        cursor: pointer;
+    }
+                /* - Buttons Act odd with websites width ---
+                    When "Mobile" size, adds the extra space to the body. Gotta make them smaller */
+    #prevBtn {
+        display: flex;
+        background-color: rgba(139, 0, 0, 0);
+        margin-left: 200%; /* What's the deal with these %%%? */
+    }
 
-/* ---Button --- */
+    #nextBtn {
+        display: flex;
+        margin-left: 7500%; /* What's the deal with these %%%? */
+        background-color: rgba(39, 39, 39, 0);
+    }
 
-.btn-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* - Works when not over image, breaks when over image??? See %%% in #prev/nextBtn */
-    margin-top: 35%;
-    z-index: 5;
-    color:rgb(75, 75, 75);
-    background-color: rgba(39, 39, 39, 0);
-    cursor: pointer;
-}
-            /* - Buttons Act odd with websites width ---
-                 When "Mobile" size, adds the extra space to the body. Gotta make them smaller */
-#prevBtn {
-    display: flex;
-    background-color: rgba(139, 0, 0, 0);
-    margin-left: 200%; /* What's the deal with these %%%? */
-}
 
-#nextBtn {
-    display: flex;
-    margin-left: 7500%; /* What's the deal with these %%%? */
-    background-color: rgba(39, 39, 39, 0);
 }
 
 .px1 {
@@ -118,6 +117,42 @@ header {
     border: solid   rgb(39, 39, 39)   1px;
     box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
     }
+
+/* --- Contact Page Stuff -- */
+.self_px {
+    width: 25%;
+    border: solid 2px rgb(39, 39, 39);
+    box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
+}
+
+.contactFlex {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: auto;
+}
+
+.address {
+    align-self: center;
+    letter-spacing: 1.5px;
+    
+}
+
+.contactForm {
+    display: block;
+    margin:auto;
+}
+
+.formName {
+    display: inline-block;
+}
+
+ /* ---- Width Adjustments always mess with photo? --- */
+input[type=text], select {
+    margin-bottom: 7.5%;
+    display: inline-block;
+    border: 2px solid rgb(39, 39, 39);
+  }
 
     /* Old Code, Might need.... {
     box-sizing: border-box;
