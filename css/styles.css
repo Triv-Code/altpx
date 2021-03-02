@@ -1,6 +1,10 @@
 /* Obviously not "Mobile First", but I was just wanting to 
 get the hang writing something things. It turned into more then
 I meant for it to become. Restart? Rework the code for Mobile? */
+/* * {
+    border: 1px solid red;
+} */
+
 body {
     display: flex;
     justify-content: center;
@@ -72,41 +76,51 @@ header {
         margin: auto;
         overflow: hidden;
         border: solid 2px rgb(39, 39, 39);
+        position: relative;
     }
 
-    .carousel-slide{
+    .carousel-slide {
         display: flex;
-        height: 850px;
         width: auto;
+    }
+
+    .carousel-slide img{
+        width: 100%;
+        height: auto;
     }
 
     .btn-container {
         display: flex;
+        position: absolute;
         flex-direction: row;
-        justify-content: space-between; /* - Works when not over image, breaks when over image??? See %%% in #prev/nextBtn */
+        justify-content: space-between;
         margin-top: 35%;
         z-index: 5;
         color:rgb(75, 75, 75);
         background-color: rgba(39, 39, 39, 0);
         cursor: pointer;
+        width: 100%;
     }
-                /* - Buttons Act odd with websites width ---
-                    When "Mobile" size, adds the extra space to the body. Gotta make them smaller */
+
     #prevBtn {
-        display: flex;
-        background-color: rgba(139, 0, 0, 0);
-        margin-left: 200%; /* What's the deal with these %%%? */
+        margin-left: 1.5%;
     }
 
     #nextBtn {
-        display: flex;
-        margin-left: 7500%; /* What's the deal with these %%%? */
-        background-color: rgba(39, 39, 39, 0);
+        margin-right: 1.5%;
     }
 
 
 }
 
+/* --- Hides Button on Mobile --- */
+@media screen and (max-width: 650px) {
+    .btn-container {
+        display: none;
+    }
+}
+
+/* --- Here for "About" page */
 .px1 {
     display: block;
     margin-left: auto;
@@ -141,7 +155,7 @@ input[type=text], select {
     margin-bottom: 1.5%;
     width: 65%;
 }
-                        /*----- Not Happy with how things are lining up visually ---*/
+                        /*----- (Form) Not Happy with how things are lining up visually ---*/
 textarea {
     resize: none;
     border: solid 2px rgb(39, 39, 39);

@@ -1,6 +1,3 @@
-// This is "a solution", but I'm not sure it is the best solution. 
-// Is this how you would go about solving the problem? 
-
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
 
@@ -12,7 +9,7 @@ const nextBtn = document.querySelector('#nextBtn');
 let counter = 0;
 const size = carouselImages[0].clientWidth;
 
-// carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 //Button Listeners
             // ??? --- Can I add Arrow Keys < / > to the EventListener? --- ??? 
@@ -29,17 +26,19 @@ prevBtn.addEventListener('click', () => {
     counter--;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
-            // ??? --- Why doesn't this loop the photos back? --- ???
-carouselSlide.addEventListener('transitioned', () => {
-    if (carouselImages[counter].id === 'lastClone') {
-        carouselSlide.style.transition = "none";
-        counter = carouselImages.length - 2;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    }
-    if (carouselImages[counter].id === 'firstClone') {
-        carouselSlide.style.transition = "none";
-        counter = carouselImages.length - counter;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    }
+            // ??? --- Auto transitioning on Clone imgs when it should hold. Needs Debugged --- ???
+// carouselSlide.addEventListener('transitionend', () => {
+//     if (carouselImages[counter].id === 'lastClone') {
+//         carouselSlide.style.transition = "none";
+//         // counter = carouselImages.length - 2; // Debugg
+//         console.log("lastClone" + counter);
+//         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+//     }
+//     if (carouselImages[counter].id === 'firstClone') {
+//         carouselSlide.style.transition = "none";
+//         counter = carouselImages.length - counter;
+//         // console.log("firstClone" + counter); // Debugg
+//         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+//     }
 
-});
+// });
