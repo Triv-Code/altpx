@@ -178,6 +178,10 @@ textarea {
     background-color: skyblue;
 }
 
+.hidden {
+    display: none;
+}
+
     /* Old Code, Might need.... {
     box-sizing: border-box;
     padding: 0;

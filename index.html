@@ -19,7 +19,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <div id="Home" class="pageContent" style="display:block;">
         <div class="carousel-container">
                 <div class="btn-container">
@@ -47,27 +47,35 @@
     
     <div id="Contact" class="pageContent" style="display:none;">
         <div>
+            <div id="error"></div>
                 <img src="img/bike_selfie.jpg" alt="bike_selfie" class="self_px">
-                    <form action="/action_page.php" class="contactForm">
-                    <h3 class="address">1717 Fake Ave &sdot; Louisville &sdot; KY 40220</h3> 
-                    <input type="text" class="formName" id="fname" name="firstname" placeholder="First Name"> 
-                    <input type="text" class="formName" id="lname" name="lastname" placeholder="Last Name">
-                <div>    
-                    <input type="text" class="email" id="email" name="email" placeholder="Email">
-                </div>
-                <div>
-                    <textarea id="subject" name="subject" placeholder="Message"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Submit" class="submit">
-                </div>
-                </form>
+                    <form action="/action_page.php" class="contactForm" name='contact-form'>
+                        <div>               <!-- First Name / Last Name -->    
+                            <h3 class="address">1717 Fake Ave &sdot; Louisville &sdot; KY 40220</h3> 
+                            <input type="text" class="formName" id="fname" name="name" placeholder="First Name"> 
+                            <div class="error_hint hidden" id="name_error">Your name is required.</div>
+                            <input type="text" class="formName" id="lname" name="name" placeholder="Last Name">
+                            <div class="error_hint hidden"  id="lname_error">Your name is required.</div>
+                        </div>
+                        <div>               <!-- Email -->
+                            <input type="text" class="email" id="email" name="email" placeholder="Email">
+                            <div class="error_hint hidden">Your email is required.</div>
+                        </div>
+                        <div>               <!-- Message -->
+                            <textarea id="subject" name="message" placeholder="Message"></textarea>
+                            <div class="error_hint hidden">Please comment above.</div>
+                        </div>
+                        <div>               <!-- Submit -->
+                            <button type="submit" value="Submit" class="submit">Submit</button>
+                        </div>
+                    </form>
         </div>
     </div>
         </div>       
     </div>
     <script src="js/nav.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
 
