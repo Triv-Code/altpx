@@ -34,7 +34,7 @@
                 <img src="img/mono/Eddie.jpg" alt="Ralph" class="px">
                 <img src="img/mono/Rick.jpg" alt="Ralph" class="px">
                 <img src="img/mono/Ralph.jpg" alt="Ralph" class="px">
-                <!-- <img src="img/mono/Alicia.jpg" id="firstClone"  alt="Alicia" class="px"> -->
+                <img src="img/mono/Alicia.jpg" id="firstClone"  alt="Alicia" class="px">
                 <!-- ^^ Used for JS loop, needs debugged ^^ -->
             </div>
         
@@ -53,17 +53,17 @@
                         <div>               <!-- First Name / Last Name -->    
                             <h3 class="address">1717 Fake Ave &sdot; Louisville &sdot; KY 40220</h3> 
                             <input type="text" class="formName" id="fname" name="name" placeholder="First Name"> 
-                            <div class="error_hint hidden" id="name_error">Your name is required.</div>
+                            <div class="hidden" id="error">Your name is required.</div>
                             <input type="text" class="formName" id="lname" name="name" placeholder="Last Name">
-                            <div class="error_hint hidden"  id="name_error">Your name is required.</div>
+                            <div class="hidden"  id="error">Your name is required.</div>
                         </div>
                         <div>               <!-- Email -->
                             <input type="text" class="email" id="email" name="email" placeholder="Email">
-                            <div class="error_hint hidden">Your email is required.</div>
+                            <div class="hidden" id="error">Your email is required.</div>
                         </div>
                         <div>               <!-- Message -->
                             <textarea id="subject" name="message" placeholder="Message"></textarea>
-                            <div class="error_hint hidden">Please comment above.</div>
+                            <div class="hidden" id="error">Please comment above.</div>
                         </div>
                         <div>               <!-- Submit -->
                             <button type="submit" value="Submit" class="submit">Submit</button>

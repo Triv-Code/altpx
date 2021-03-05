@@ -29,25 +29,26 @@ function prevPicture(){
 nextBtn.addEventListener('click', nextPicture);
 prevBtn.addEventListener('click', prevPicture);
 
-function test(event) {
-var x = event.key;
-if (x == "a") {
-    console.log(peanut);
-}
-}
+// --- Hiding Button when on last image
+carouselSlide.addEventListener('transitionend', () => {
+    if (carouselImages[counter].id === 'firstClone') {
+        nextBtn.classList.remove('hidden');
+        console.log("soup"); // --- I like soup...
+    }
+})
+
 // ??? --- Auto transitioning on Clone imgs when it should hold. Needs Debugged --- ???
 // carouselSlide.addEventListener('transitionend', () => {
 //     if (carouselImages[counter].id === 'lastClone') {
 //         carouselSlide.style.transition = "none";
-//         // counter = carouselImages.length - 2; // Debugg
+//         counter = carouselImages.length - 2; // Debugg
 //         console.log("lastClone" + counter);
 //         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 //     }
-//     if (carouselImages[counter].id === 'firstClone') {
-//         carouselSlide.style.transition = "none";
-//         counter = carouselImages.length - counter;
-//         // console.log("firstClone" + counter); // Debugg
-//         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-//     }
-
+    // if (carouselImages[counter].id === 'firstClone') {
+    //     carouselSlide.style.transition = "none";
+    //     counter = carouselImages.length - counter;
+    //     console.log("firstClone" + counter); // Debugg
+    //     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    // }
 // });
