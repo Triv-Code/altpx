@@ -85,8 +85,8 @@ header {
     }
 
     .carousel-slide img{
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 850px;
     }
 
     .btn-container {
