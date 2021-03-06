@@ -9,7 +9,7 @@ const errorMsg = document.getElementById('error');
 // --- Shows Error Text (Removes "hidden" class)
 function validateInputs() {
     if (!fname.value) {
-        fname.classList.remove('hidden');
+        fname.style.display('block');
         console.log("yoda"); // --- Yoda is cool...
     }
 }

@@ -121,16 +121,43 @@ header {
 }
 
 /* --- Here for "About" page */
-.px1 {
+#aboutContainer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    width: 85%;
+}
+
+.bio_title {
+    margin-left: 4%;
+    margin-top: 0px;
+}
+
+.bio {
+    margin-left: 4%;
+
+}
+
+.selfie {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2%;
-    width: 85%;
-    height: auto;
+    width: 320.75px;
+    height: 428.94px;
     border: solid   rgb(39, 39, 39)   1px;
     box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
     }
+/* Media Query for About */
+ @media screen and (max-width: 900px) {
+     #aboutContainer {
+         flex-direction: column;
+     }
+
+     .bio_title {
+         margin-top: 5%;
+     }
+ }   
 
 /* --- Contact Page Stuff -- */
 .self_px {
@@ -245,5 +272,16 @@ a.link:hover {
 .formName {
     display: inline-block;
 }
+
+.px1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    width: 85%;
+    height: auto;
+    border: solid   rgb(39, 39, 39)   1px;
+    box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
+    }
 
 */
