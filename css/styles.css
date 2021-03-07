@@ -160,49 +160,86 @@ header {
  }   
 
 /* --- Contact Page Stuff -- */
-.self_px {
-    width: 25%;
-    border: solid 2px rgb(39, 39, 39);
-    box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
-    margin-left: 7.5%;
+.contact_container {   /* How do I get this to stay centered to the container? */
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
 }
 
-form {
-    float: right;
-    width: 57%;
+.text_container {
     margin-right: 7.5%;
 }
 
-input[type=text], select {
+.contact_label {
+    font-size: 1.3rem;
+    font-style: strong;
+}
+
+.contact_text {
+    font-size: 1.15rem;
+    margin-left: 2.5%;
+    margin-top: -.25%;
+}
+
+form {
+    width: 60%;
+    margin-right: 7.5%;
+}
+
+input[type="text"] {
     margin-bottom: 2%;
-    display: inline-block;
     border: 2px solid rgb(39, 39, 39);
     padding: 12px;
-    margin-top: 0;
-    margin-bottom: 1.5%;
-    width: 65%;
+    width: 75%;
 }
-                        /*----- (Form) Not Happy with how things are lining up visually ---*/
+
 textarea {
     resize: none;
     border: solid 2px rgb(39, 39, 39);
-    width: 67.35%;
+    width: 77.5%;
     height: 200px;
 }
 
 .submit {
     float: right;
-    margin-right: 31.75%;
+    margin-right: 21.50%;
     margin-top: 1%;
     background-color:white;
     border: solid 2px rgb(39, 39, 39);
     width: 15%;
-    height: 25px;
+    height: auto;
 }
 
 .submit:hover {
     cursor: pointer;
     background-color: skyblue;
+}
+
+@media screen and (max-width: 900px) {
+    .contact_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2.5%;
+    }
+
+    .text_container {
+        width: 450px;
+    }
+
+    form {
+        width: 450px;
+    }
+
+    textarea {
+        width: 358.5px;
+    }
 }
 
 .hidden {
