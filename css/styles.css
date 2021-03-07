@@ -2,7 +2,7 @@
 get the hang writing something things. It turned into more then
 I meant for it to become. Restart? Rework the code for Mobile? */
 /* * {
-    border: 1px solid red;
+    font-family: Helvetica, Arial, sans-serif;
 } */
 
 body {
@@ -21,18 +21,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: -.5% 7.5% -1% 7.5%;
+    margin: 1.5% 7.5% .35% 7.5%;
 }    
 
 /* --- Nav Bar and Logo --- */
             /* --- Gotta figure out the stacked menu for smaller screens --- */
-.logo {
+/* .logo {
     text-decoration: none;
     color: rgb(39, 39, 39);
+} */
+
+.logo {
+    width: 100px;
+    height: auto;
 }
 
 .nav_links {
-    margin-bottom: 2.25%;
+    margin-bottom: 0%;
 }
 
 .nav_links li {
@@ -175,13 +180,14 @@ header {
 
 .contact_label {
     font-size: 1.3rem;
-    font-style: strong;
+    font-weight: bold;
 }
 
 .contact_text {
     font-size: 1.15rem;
-    margin-left: 2.5%;
-    margin-top: -.25%;
+    margin-left: 15%;
+    margin-top: -3.5%;
+    font-style: oblique;
 }
 
 form {
