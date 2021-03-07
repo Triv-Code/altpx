@@ -247,6 +247,22 @@ textarea {
         width: 358.5px;
     }
 }
+/* This is bad code... */
+#error,
+#error2,
+#error3 {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+#error4 {
+    color: red;
+    margin-top: -2px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
 
 .hidden {
     display: none;
