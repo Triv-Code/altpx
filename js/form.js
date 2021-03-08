@@ -54,6 +54,7 @@ function thanks() {
         errorMsg3.classList.add("hidden");
         errorMsg4.classList.add("hidden");
         alert("Thank you for your message! We'll get back to you soon.");
+        form.reset();
     }
 }
 
