@@ -31,9 +31,16 @@ prevBtn.addEventListener('click', prevPicture);
 
 // --- Hiding Button when on last image
 carouselSlide.addEventListener('transitionend', () => {
-    if (carouselImages[counter].id === 'firstClone') {
-        nextBtn.classList.remove('hidden');
+    if (carouselImages[counter].id === 'firstClone') {          // --- Change ID if not using Loop Feature
+        nextBtn.classList.add("btnHide");
         console.log("soup"); // --- I like soup...
+    } else if (carouselImages[counter].id === 'lastClone') {    
+        prevBtn.classList.add("btnHide");                       // --- Change ID if not using Loop Feature
+        console.log("fox"); // --- Fox can be soup... 
+    } else {
+        nextBtn.classList.remove("btnHide");
+        prevBtn.classList.remove("btnHide");
+        console.log("panda"); // --- Pandas can be soup
     }
 })
 

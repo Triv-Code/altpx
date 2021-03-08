@@ -273,6 +273,10 @@ textarea {
     background-color: red;
 }
 
+.btnHide {
+    visibility: hidden;
+} 
+
     /* Old Code, Might need.... {
     box-sizing: border-box;
     padding: 0;
