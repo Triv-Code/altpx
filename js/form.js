@@ -4,16 +4,16 @@ const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 const email = document.getElementById('email');
 const message = document.getElementById('subject');
-const errorMsg = document.getElementById('error');
-const errorMsg2 = document.getElementById('error2');
-const errorMsg3 = document.getElementById('error3');
-const errorMsg4 = document.getElementById('error4');
+const errorMsg = document.getElementById('error');      // Tried having 1 ID to cut down on the code
+const errorMsg2 = document.getElementById('error2');    // But it only ever grabbed the 1st ID. 
+const errorMsg3 = document.getElementById('error3');    // I think it's fine, because of individual Validation
+const errorMsg4 = document.getElementById('error4');    // Email being different than name for example
 
 // --- Shows / Hides Error text (removes/adds hidden class)
-function fnameValid() {                         // Why doesn't this grab every ID that is empty?
-    if (!fname.value) {                             // Currently only grabs the 1st one. 
+function fnameValid() {                        
+    if (!fname.value) {
         errorMsg.classList.remove("hidden");
-        console.log("yoda"); // --- Yoda is cool...
+        console.log("yoda"); // --- Yoda is cool... (Debugg)
     } else if(fname.value) {
         errorMsg.classList.add("hidden");
     }

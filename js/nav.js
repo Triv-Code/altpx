@@ -1,6 +1,3 @@
-// --- It works, but the intial load shows everything, 
-// --- So you have to click a button for it to work correctly. 
-
 function openPage(evt, pageName) {
   var i, pageContent, link;
   pageContent = document.getElementsByClassName("pageContent");

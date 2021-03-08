@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
+
 <body>
+    
     <header>
         <a href="index.html"><img src="img/altpx_logo_2pxborder.jpg" class="logo"></a>
         <nav>
@@ -26,24 +28,26 @@
                     <i class="fas fa-angle-left btnHide" id="prevBtn"></i>
                     <i class="fas fa-angle-right" id="nextBtn"></i>
                 </div>
-            <div class="carousel-slide">
-                <img src="img/mono/Alicia.jpg" id="lastClone" alt="Alicia" class="px first">
-                <img src="img/mono/Kristy.jpg" alt="Kristy" class="px">
-                <img src="img/mono/Candace.jpg" alt="Ralph" class="px">
-                <img src="img/mono/James.jpg" alt="Ralph" class="px">
-                <img src="img/mono/Eddie.jpg" alt="Ralph" class="px">
-                <img src="img/mono/Rick.jpg" alt="Ralph" class="px">
-                <img src="img/mono/Ralph.jpg" alt="Ralph" class="px">
-                <img src="img/mono/Alicia.jpg" id="firstClone"  alt="Alicia" class="px">
-                <!-- ^^ Used for JS loop, needs debugged ^^ -->
-            </div>
-        
+
+                <div class="carousel-slide">
+                    <img src="img/mono/Alicia.jpg" id="lastClone" alt="Alicia" class="px first">
+                    <img src="img/mono/Kristy.jpg" alt="Kristy" class="px">
+                    <img src="img/mono/Candace.jpg" alt="Ralph" class="px">
+                    <img src="img/mono/James.jpg" alt="Ralph" class="px">
+                    <img src="img/mono/Eddie.jpg" alt="Ralph" class="px">
+                    <img src="img/mono/Rick.jpg" alt="Ralph" class="px">
+                    <img src="img/mono/Ralph.jpg" id="firstClone" alt="Ralph" class="px">
+                    <!-- <img src="img/mono/Alicia.jpg" id="firstClone"  alt="Alicia" class="px"> -->
+                    <!-- ^^ Used for JS loop, needs debugged ^^ -->
+                </div>
         </div>
     </div>
         
     <div id="About" class="pageContent" style="display:none;">
-        <div id="aboutContainer">
+        <div id="aboutContainer"> 
+            
             <img src="img/bike_selfie.jpg" alt="Self Portrait" class="selfie">
+            
             <div>
                 <h1 class="bio_title">A Little About Myself...</h1>
                 <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse potenti nullam ac tortor vitae purus faucibus. Vitae justo eget magna fermentum iaculis eu non diam. In iaculis nunc sed augue lacus viverra vitae congue. Cursus turpis massa tincidunt dui ut ornare. Enim diam vulputate ut pharetra sit amet aliquam id. Congue mauris rhoncus aenean vel. Sit amet porttitor eget dolor morbi non. Volutpat diam ut venenatis tellus in metus. Sed risus pretium quam vulputate dignissim. Non curabitur gravida arcu ac tortor dignissim convallis aenean. </p>
@@ -54,6 +58,7 @@
     
     <div id="Contact" class="pageContent" style="display:none;">
         <div class="contact_container">
+            
             <div class="text_container">
                 <h3 class="contact_label">Studio Manager</h3>
                     <h3 class="contact_text">Suze Jones</h3>
@@ -63,11 +68,10 @@
                     <h3 class="contact_text">1717 Fake Ave &sdot; Louisville &sdot; KY 40220</h3>
                 <h3 class="contact_label">Mailing / Shipping Address</h3>
                     <h3 class="contact_text">P.O. Box 79581 &sdot; Louisville &sdot; KY</h3>
-            </div>
-                    
+            </div>       
                     
             <form action="/action_page.php" class="contactForm" name='contact-form'>
-                    <div>                       <!-- First Name / Last Name -->     
+                    <div>               <!-- First Name / Last Name -->     
                         <input type="text" class="formName" id="fname" name="name" placeholder="First Name"> 
                             <div class="hidden" id="error">Your first name is required.</div>
                         <input type="text" class="formName" id="lname" name="name" placeholder="Last Name">
@@ -87,15 +91,10 @@
             </form>
         </div>
     </div>
+    
     <script src="js/nav.js"></script>
     <script src="js/app.js"></script>
     <script src="js/form.js"></script>
+
 </body>
 </html>
-
-<!-- Old Code --
-                <div class="btn-container">
-                <button class="btn" id="prevBtn">&#10094;</button>
-                <button class="btn" id="nextBtn">&#10095;</button>
-                </div>
-            -->
