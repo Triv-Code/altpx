@@ -44,6 +44,10 @@ header {
 
 /* --- Mobile Photos (gets rid of carousel) --- */
 @media screen and (max-width: 650px) {
+    body {
+        margin-top: 2%;
+    }
+
     .px {
         display: block;
         margin-left: auto;
@@ -234,6 +238,33 @@ textarea {
         width: 358.5px;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .text_container {
+        width: 350px;
+    }
+
+    form {
+        width: 350px;
+    }
+
+    textarea {
+        width: 282.5px;
+    }
+
+    .contact_label {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .contact_text {
+        font-size: 1.075rem;
+        margin-left: 7.5%;
+        margin-top: -3.5%;
+        font-style: oblique;
+    }
+}
+
 
 /* --- Error Codes for Form ---  */
 #error,
