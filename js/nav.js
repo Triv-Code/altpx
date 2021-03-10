@@ -11,3 +11,17 @@ function openPage(evt, pageName) {
   document.getElementById(pageName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// --- Menu Script
+
+function menu() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    console.log("first");
+  } else {
+    x.style.display = "flex";
+    console.log("second");
+  } 
+  console.log("navtest");
+}

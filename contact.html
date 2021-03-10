@@ -7,18 +7,37 @@
     <title>altpx portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo"><h1>altpx</h1></a>
         <nav>
+            <a href="javascript:void(0);" class="menuBtn" onclick="menu()">
+                <i class="fa fa-bars"></i>
+              </a>
+            <div  id="myLinks"  style="display: none;" >
             <ul class="nav_links">
                 <li><a href="index.html" class="link">Home</a></li>
                 <li><a href="gallery.html" class="link">Gallery</a></li>
                 <li><a href="contact.html" class="link">Contact</a></li>
             </ul>
+            </div>
         </nav>
     </header>
+
+    <!-- <nav>
+        <a href="javascript:void(0);" class="menuBtn" onclick="menu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        <div  id="myLinks"  >
+        <ul class="nav_links">
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="gallery.html" class="link">Gallery</a></li>
+            <li><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+        </div>
+    </nav> -->
 
     <!-- <div id="Contact" class="pageContent" > -->
         <div class="contact_container">
@@ -55,6 +74,6 @@
             </form>
         </div>
     <!-- </div> -->
-
+        <script src="js/nav.js"></script>
 </body>
 </html>
