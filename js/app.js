@@ -29,6 +29,19 @@ function prevPicture(){
 nextBtn.addEventListener('click', nextPicture);
 prevBtn.addEventListener('click', prevPicture);
 
+// --- Arrow Keys for Next / Previous Picture Movement
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 37:
+            prevPicture();
+            break;
+        case 39:
+            nextPicture();
+            break;
+    }
+};
+
+
 // --- Hiding Button when on last image
 carouselSlide.addEventListener('transitionend', () => {
     if (carouselImages[counter].id === 'firstClone') {          // --- Change ID if not using Loop Feature
@@ -58,4 +71,4 @@ carouselSlide.addEventListener('transitionend', () => {
     //     console.log("firstClone" + counter); // Debugg
     //     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     // }
-// });
+// })
