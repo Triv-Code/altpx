@@ -10,7 +10,7 @@ body {
     height: auto;
 }
 
-header {
+.nav_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,11 @@ header {
 
 .nav_links li {
     display: inline-flex;
-}  
+} 
+
+li {
+    list-style-type: none;
+}
 
 .link  {
     background-color: rgba(0, 0, 0, 0);
@@ -299,8 +303,8 @@ textarea {
 }
 
 
-/* --- Mobile Nav Test Area */
-/* @media screen and (max-width: 650px) {
+/* --- Mobile Navigation Menu */
+@media screen and (max-width: 650px) {
     .nav_links {
         display: none;
     }
@@ -310,27 +314,35 @@ textarea {
     .menuBtn {
         display: none;
     }
-} */
 
-/* .menuBtn {
-    position: absolute;
+    #myLinks {
+        display: none;
+    }
+
+    #mLink {
+        display: none;
+    }
+
+}
+
+.menuBtn {
+    color: rgb(39, 39, 39);
 }
 
 #myLinks {
-    flex-direction: column;
-}
-
-.nav_links {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.nav_links a {
-    background-color: brown;
-    padding: 14px 16px;
+#mLink {
+    background-color: rgb(39, 39, 39);
+    border:rgb(39, 39, 39) solid 1px;
+    color: white;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-bottom: .25%;
     text-decoration: none;
-    font-size: 17px;
-    justify-content: left;
-} */
-
-  
+}

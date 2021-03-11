@@ -12,14 +12,23 @@
 <body>
     
     <header>
-        <a href="index.html"><img src="img/altpx_logo_2pxborder.jpg" class="logo"></a>
-        <nav>
-            <ul id="myLinks" class="nav_links">
-                <li><button class="link" onclick="openPage(event, 'Home')">Home</button></li>
-                <li><button class="link" onclick="openPage(event, 'About')">About</button></li>
-                <li><button class="link" onclick="openPage(event, 'Contact')">Contact</button></li>
-            </ul>
-        </nav>
+        <div class="nav_container">
+            <a href="index.html"><img src="img/altpx_logo_2pxborder.jpg" class="logo"></a>
+            <nav>
+                <ul class="nav_links">
+                    <li><button class="link" onclick="openPage(event, 'Home')">Home</button></li>
+                    <li><button class="link" onclick="openPage(event, 'About')">About</button></li>
+                    <li><button class="link" onclick="openPage(event, 'Contact')">Contact</button></li>
+                </ul>
+            </nav>
+            <a href="javascript:void(0);" class="menuBtn" onclick="menu()">
+                <i class="fa fa-bars"></i></a>
+        </div>
+        <div id="myLinks"  class="menuNav" style="display: none;">
+            <button id="mLink" class="link" onclick="openPage(event, 'Home')">Home</button>
+            <button id="mLink" class="link" onclick="openPage(event, 'About')">About</button>
+            <button id="mLink" class="link" onclick="openPage(event, 'Contact')">Contact</button>
+        </div>
     </header>
 
     <div id="Home" class="pageContent" style="display:block;">
