@@ -13,15 +13,21 @@ function openPage(evt, pageName) {
 }
 
 // --- Menu Script
-
+const myLinks = document.getElementById("myLinks");
+const mBtn = document.querySelector('#menuBtn');
+const mID = document.getElementById("mLink");
+          // ^^^ Only Grabs the 1st ID
 function menu() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
-    console.log("first");
+  if (myLinks.style.display === "flex") {
+    myLinks.style.display = "none";
   } else {
-    x.style.display = "flex";
-    console.log("second");
+    myLinks.style.display = "flex";
   } 
-  console.log("navtest");
 }
+          // Only works with Home / the first ID
+function closeMenu() {
+  myLinks.style.display = "none";
+  console.log("pizza");
+}
+
+mID.addEventListener('click', closeMenu);
