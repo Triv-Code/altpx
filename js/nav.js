@@ -1,3 +1,4 @@
+// --- Desktop Navigation (Show/Hide DIVs)
 function openPage(evt, pageName) {
   var i, pageContent, link;
   pageContent = document.getElementsByClassName("pageContent");
@@ -12,11 +13,11 @@ function openPage(evt, pageName) {
   evt.currentTarget.className += " active";
 }
 
-// --- Menu Script
+// --- Menu Script (Mobile)
 const myLinks = document.getElementById("myLinks");
 const mBtn = document.querySelector('#menuBtn');
-const mID = document.getElementById("mLink");
-          // ^^^ Only Grabs the 1st ID
+
+// --- Shows / Hides Menu
 function menu() {
   if (myLinks.style.display === "flex") {
     myLinks.style.display = "none";
@@ -24,10 +25,12 @@ function menu() {
     myLinks.style.display = "flex";
   } 
 }
-          // Only works with Home / the first ID
+
+// --- Closes Menu on Interaction
 function closeMenu() {
   myLinks.style.display = "none";
-  console.log("pizza");
 }
 
-mID.addEventListener('click', closeMenu);
+document.querySelector(".mLink-1").addEventListener('click', closeMenu);
+document.querySelector(".mLink-2").addEventListener('click', closeMenu);
+document.querySelector(".mLink-3").addEventListener('click', closeMenu);
