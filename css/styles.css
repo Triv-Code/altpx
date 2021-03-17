@@ -337,7 +337,7 @@ textarea {
     margin-right: auto;
 }
 
-#mLink {
+.mLink {
     background-color: rgb(39, 39, 39);
     border:rgb(39, 39, 39) solid 1px;
     color: white;

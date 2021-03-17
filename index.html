@@ -25,9 +25,9 @@
                 <i class="fa fa-bars"></i></a>
         </div>
         <div id="myLinks"  class="menuNav" style="display: none;">
-            <button id="mLink" class="link mLink-1" onclick="openPage(event, 'Home')">Home</button>
-            <button id="mLink" class="link mLink-2" onclick="openPage(event, 'About')">About</button>
-            <button id="mLink" class="link mLink-3" onclick="openPage(event, 'Contact')">Contact</button>
+            <button class="link mLink" onclick="openPage(event, 'Home'); closeMenu()">Home</button>
+            <button class="link mLink" onclick="openPage(event, 'About'); closeMenu()">About</button>
+            <button class="link mLink" onclick="openPage(event, 'Contact'); closeMenu()">Contact</button>
         </div>
     </header>
 <!-- Home Page Starts Here -->
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="carousel-slide">
-                    <img src="img/mono/Alicia.jpg" id="lastClone" alt="Alicia" class="px first">
+                    <img src="img/mono/Alicia.jpg" id="lastClone" alt="Alicia" class="px">
                     <img src="img/mono/Kristy.jpg" alt="Kristy" class="px">
                     <img src="img/mono/Candace.jpg" alt="Ralph" class="px">
                     <img src="img/mono/James.jpg" alt="Ralph" class="px">

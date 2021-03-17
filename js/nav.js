@@ -15,7 +15,6 @@ function openPage(evt, pageName) {
 
 // --- Menu Script (Mobile)
 const myLinks = document.getElementById("myLinks");
-const mBtn = document.querySelector('#menuBtn');
 
 // --- Shows / Hides Menu
 function menu() {
@@ -30,7 +29,3 @@ function menu() {
 function closeMenu() {
   myLinks.style.display = "none";
 }
-
-document.querySelector(".mLink-1").addEventListener('click', closeMenu);
-document.querySelector(".mLink-2").addEventListener('click', closeMenu);
-document.querySelector(".mLink-3").addEventListener('click', closeMenu);
