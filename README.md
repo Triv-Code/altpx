@@ -1,9 +1,7 @@
 # altpx_website
-
 The website is designed to show off a portrait series for altpx (fictional photo business). It is a very minimalist aesthetic, with the portraits being the main focus. Opening with one huge image, I added a carousel to allow the user to click (or arrow key) through the rest of the series. The About and Contact pages are for extra info or presumably inquiring about photo work. 
 
 Javascript Functionality 
-
 nav.js
 - The navigation menus shows three pages, but there is actually only one html document. The content for each page is under a different div and the script shows the content of the current div while hiding the content of the other two. 
 The second part of this script is for the mobile menu, which has the navigation nested inside of the (hamburger) menu button. The menu() function opens and closes the menu when clicked by changing the display styles. The closeMenu() function closes the menu box when one of the pages are clicked. This function is called in the HTML itself. 
@@ -16,7 +14,6 @@ form.js
  - This script is for form validation. It checks to see if each section of the form has been filled out and if it hasn't it displays an error message beneath the input area when submitted. If you correct the problem, the error will disappear on the next submit. If all the areas have been filled out an alert is prompted, thanking you for your message. 
 
 CSS Functionality 
-
 650 px
  - Mobile Menu (hamburger) is shown, if clicked it shows navigation options under the header. Above 650px the menu is hidden and the regular desktop navigation takes its place. 
  - Photos are stacked in a column, for scrolling down. 
