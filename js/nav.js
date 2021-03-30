@@ -16,7 +16,7 @@ function openPage(evt, pageName) {
 // --- Menu Script (Mobile)
 const myLinks = document.getElementById("myLinks");
 
-// --- Shows / Hides Menu
+// --- Shows / Hide Mobile Menu
 function menu() {
   if (myLinks.style.display === "flex") {
     myLinks.style.display = "none";

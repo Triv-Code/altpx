@@ -46,7 +46,7 @@ body {
 }
 
 /* --- Fixes Space between Nav / Images --- */
- .btn-container {
+.btn-container {
     display: none;
 }
 
@@ -128,7 +128,7 @@ body {
 }
 
 form {
-    width: 450px;
+    width: 100%;
     margin-right: 7.5%;
 }
 
@@ -136,23 +136,24 @@ input[type="text"] {
     margin-bottom: 2%;
     border: 2px solid rgb(39, 39, 39);
     padding: 12px;
-    width: 75%;
+    width: 90%;
 }
 
 textarea {
     resize: none;
     border: solid 2px rgb(39, 39, 39);
-    width: 358.5px;
+    width: 90%;
     height: 200px;
+    padding: 12px;
 }
 
 .submit {
-    float: right;
-    margin-right: 21.50%;
     margin-top: 1%;
     background-color:white;
     border: solid 2px rgb(39, 39, 39);
-    width: 15%;
+    width: 25%;
+    max-width: 100px;
+    min-width: 75px;
     height: auto;
 }
 
@@ -262,11 +263,15 @@ textarea {
     }
 
     form {
-        width: 60%;
+        width: 100%;
     }
 
     textarea {
-        width: 79.5%;
+        width: 100%;
+    }
+
+    input[type="text"] {
+        width: 100%;
     }
 }
 
