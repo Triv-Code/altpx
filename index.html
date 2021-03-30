@@ -13,7 +13,9 @@
     
     <header>
         <div class="nav_container">
+            <!-- Logo -->
             <a href="index.html"><img src="img/altpx_logo_2pxborder.jpg" class="logo"></a>
+            <!-- Desktop Navigation -->
             <nav>
                 <ul class="nav_links">
                     <li><button class="link" onclick="openPage(event, 'Home')">Home</button></li>
@@ -21,9 +23,11 @@
                     <li><button class="link" onclick="openPage(event, 'Contact')">Contact</button></li>
                 </ul>
             </nav>
+            <!-- Mobile Menu Icon -->
             <a href="javascript:void(0);" class="menuBtn" onclick="menu()">
                 <i class="fa fa-bars"></i></a>
         </div>
+        <!-- Mobile Links -->
         <div id="myLinks"  class="menuNav" style="display: none;">
             <button class="link mLink" onclick="openPage(event, 'Home'); closeMenu()">Home</button>
             <button class="link mLink" onclick="openPage(event, 'About'); closeMenu()">About</button>
@@ -32,12 +36,13 @@
     </header>
 <!-- Home Page Starts Here -->
     <div id="Home" class="pageContent" style="display:block;">
+        <!-- Carousel -->
         <div class="carousel-container">
                 <div class="btn-container">
                     <i class="fas fa-angle-left btnHide" id="prevBtn"></i>
                     <i class="fas fa-angle-right" id="nextBtn"></i>
                 </div>
-
+                <!-- Images for Home Page -->
                 <div class="carousel-slide">
                     <img src="img/mono/Alicia.jpg" id="lastClone" alt="Alicia" class="px">
                     <img src="img/mono/Kristy.jpg" alt="Kristy" class="px">
@@ -46,17 +51,15 @@
                     <img src="img/mono/Eddie.jpg" alt="Ralph" class="px">
                     <img src="img/mono/Rick.jpg" alt="Ralph" class="px">
                     <img src="img/mono/Ralph.jpg" id="firstClone" alt="Ralph" class="px">
-                    <!-- <img src="img/mono/Alicia.jpg" id="firstClone"  alt="Alicia" class="px"> -->
-                    <!-- ^^ Used for JS loop, needs debugged ^^ -->
                 </div>
         </div>
     </div>
 <!-- About Page Starts Here  -->
     <div id="About" class="pageContent" style="display:none;">
         <div id="aboutContainer"> 
-            
+            <!-- Bio Image -->
             <img src="img/bike_selfie.jpg" alt="Self Portrait" class="selfie">
-            
+            <!-- Bio Text -->
             <div>
                 <h1 class="bio_title">A Little About Myself...</h1>
                 <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse potenti nullam ac tortor vitae purus faucibus. Vitae justo eget magna fermentum iaculis eu non diam. In iaculis nunc sed augue lacus viverra vitae congue. Cursus turpis massa tincidunt dui ut ornare. Enim diam vulputate ut pharetra sit amet aliquam id. Congue mauris rhoncus aenean vel. Sit amet porttitor eget dolor morbi non. Volutpat diam ut venenatis tellus in metus. Sed risus pretium quam vulputate dignissim. Non curabitur gravida arcu ac tortor dignissim convallis aenean. </p>
@@ -80,27 +83,28 @@
             </div>       
                     
             <form action="/action_page.php" class="contactForm" name='contact-form'>
-                    <div>               <!-- First Name / Last Name -->     
+                    <div>   <!-- First Name-->
                         <input type="text" class="formName" id="fname" name="name" placeholder="First Name"> 
                             <div class="hidden" id="error">Your first name is required.</div>
+                            <!-- Last Name-->
                         <input type="text" class="formName" id="lname" name="name" placeholder="Last Name">
                             <div class="hidden"  id="error2">Your last name is required.</div>
                     </div>
-                    <div>               <!-- Email -->
+                    <div>   <!-- Email -->
                         <input type="text" class="email" id="email" name="email" placeholder="Email">
                             <div class="hidden" id="error3">Your email is required.</div>
                     </div>
-                    <div>               <!-- Message -->
+                    <div>   <!-- Message -->
                         <textarea id="subject" name="message" placeholder="Message"></textarea>
                             <div class="hidden" id="error4">Please comment above.</div>
                     </div>
-                    <div>               <!-- Submit -->
+                    <div>   <!-- Submit -->
                         <button type="submit" value="Submit" class="submit">Submit</button>
                     </div>
             </form>
         </div>
     </div>
-    
+    <!-- Javascript -->
     <script src="js/nav.js"></script>
     <script src="js/app.js"></script>
     <script src="js/form.js"></script>

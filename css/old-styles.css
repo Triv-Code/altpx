@@ -1,0 +1,333 @@
+body {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    max-width: 1500px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 0;
+    padding-top: 0;
+    /* height: auto; */
+} 
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5% 7.5% .35% 7.5%;
+}    
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.nav_links {
+    margin-bottom: 0%;
+}
+
+.nav_links li {
+    display: inline-flex;
+} 
+
+.link  {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px 0px 0px 10px;
+}
+
+.link:hover {
+    color:rgb(136, 241, 255);
+}
+
+/* --- Mobile Photos (gets rid of carousel) --- */
+@media screen and (max-width: 650px) {
+    body {
+        margin-top: 2%;
+    }
+
+    .px {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
+        width: 85%;
+        height: auto;
+        border: solid   rgb(39, 39, 39)   1px;
+        box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
+        }   
+         /* --- Fixes transition bug when going to mobile size ---  */
+    .carousel-slide {
+        transition: none !important;
+        transform: none !important;
+    }    
+        /* --- Hides Buttons --- */
+    .btn-container {
+        display: none;
+    }
+}
+
+/* --- Carousel Gallery (Desktop View) --- */
+@media screen and (min-width: 650px) {
+    .carousel-container{
+        display: flex;
+        width: 85%;
+        margin: auto;
+        overflow: hidden;
+        border: solid 2px rgb(39, 39, 39);
+        position: relative;
+    }
+
+    .carousel-slide {
+        display: flex;
+        width: auto;
+    }
+
+    .carousel-slide img{
+        width: auto;
+        height: 850px;
+    }
+
+    .btn-container {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 35%;
+        z-index: 5;
+        color:rgb(75, 75, 75);
+        background-color: rgba(39, 39, 39, 0);
+        cursor: pointer;
+        width: 100%;
+    }
+
+    #prevBtn {
+        margin-left: 1.5%;
+    }
+
+    #nextBtn {
+        margin-right: 1.5%;
+    }
+
+
+}
+
+/* --- Here for "About" page */
+#aboutContainer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    width: 85%;
+}
+
+.bio_title {
+    margin-left: 4%;
+    margin-top: 0px;
+}
+
+.bio {
+    margin-left: 4%;
+
+}
+
+.selfie {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320.75px;
+    height: 428.94px;
+    border: solid   rgb(39, 39, 39)   1px;
+    box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
+    }
+
+/* --- Media Query for About --- */
+ @media screen and (max-width: 900px) {
+     #aboutContainer {
+         flex-direction: column;
+     }
+
+     .bio_title {
+         margin-top: 5%;
+     }
+ }   
+
+/* --- Contact Page Stuff -- */
+.contact_container {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+}
+
+.text_container {
+    margin-right: 7.5%;
+}
+
+.contact_label {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.contact_text {
+    font-size: 1.15rem;
+    margin-left: 15%;
+    margin-top: -3.5%;
+    font-style: oblique;
+}
+
+form {
+    width: 60%;
+    margin-right: 7.5%;
+}
+
+input[type="text"] {
+    margin-bottom: 2%;
+    border: 2px solid rgb(39, 39, 39);
+    padding: 12px;
+    width: 75%;
+}
+
+textarea {
+    resize: none;
+    border: solid 2px rgb(39, 39, 39);
+    width: 77.5%;
+    height: 200px;
+}
+
+.submit {
+    float: right;
+    margin-right: 21.50%;
+    margin-top: 1%;
+    background-color:white;
+    border: solid 2px rgb(39, 39, 39);
+    width: 15%;
+    height: auto;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: skyblue;
+}
+
+    /* --- Media Query for Contact Page --- */
+@media screen and (max-width: 900px) {
+    .contact_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2.5%;
+    }
+
+    .text_container {
+        width: 450px;
+    }
+
+    form {
+        width: 450px;
+    }
+
+    textarea {
+        width: 358.5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .text_container {
+        width: 350px;
+    }
+
+    form {
+        width: 350px;
+    }
+
+    textarea {
+        width: 282.5px;
+    }
+
+    .contact_label {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .contact_text {
+        font-size: 1.075rem;
+        margin-left: 7.5%;
+        margin-top: -3.5%;
+        font-style: oblique;
+    }
+}
+
+
+/* --- Error Codes for Form ---  */
+#error,
+#error2,
+#error3 {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+#error4 {
+    color: red;
+    margin-top: -2px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+/* --- CSS Hide Features for Javascript --- */
+.hidden {
+    display: none;
+}
+
+.btnHide {
+    visibility: hidden;
+} 
+
+/* --- Mobile Navigation Menu */
+@media screen and (max-width: 650px) {
+    .nav_links {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .menuBtn {
+        display: none;
+    }
+
+    #myLinks {
+        display: none !important;
+    }
+
+}
+
+.menuBtn {
+    color: rgb(39, 39, 39);
+}
+
+#myLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mLink {
+    background-color: rgb(39, 39, 39);
+    border:rgb(39, 39, 39) solid 1px;
+    color: white;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-bottom: .25%;
+    text-decoration: none;
+}

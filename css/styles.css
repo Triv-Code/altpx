@@ -1,53 +1,52 @@
 body {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
     max-width: 1500px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
     padding-top: 0;
-    /* height: auto; */
-} 
-
-.nav_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1.5% 7.5% .35% 7.5%;
-}    
+}
 
 .logo {
     width: 100px;
     height: auto;
 }
 
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5% 7.5% .35% 7.5%;
+}  
+
 .nav_links {
-    margin-bottom: 0%;
+    display: none;
 }
 
-.nav_links li {
-    display: inline-flex;
-} 
-
-.link  {
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 0px 0px 0px 10px;
+/* Home Page --- Mobile */
+.menuBtn {
+    color: rgb(39, 39, 39);
 }
-
-.link:hover {
-    color:rgb(136, 241, 255);
+    
+#myLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-/* --- Mobile Photos (gets rid of carousel) --- */
+    
+.mLink {
+    background-color: rgb(39, 39, 39);
+    border:rgb(39, 39, 39) solid 1px;
+    color: white;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-bottom: .25%;
+    text-decoration: none;
+}
+    
 @media screen and (max-width: 650px) {
-    body {
-        margin-top: 2%;
-    }
-
+    /* --- .px is removed when the carousel comes into play --- */
     .px {
         display: block;
         margin-left: auto;
@@ -57,20 +56,141 @@ body {
         height: auto;
         border: solid   rgb(39, 39, 39)   1px;
         box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
-        }   
-         /* --- Fixes transition bug when going to mobile size ---  */
-    .carousel-slide {
-        transition: none !important;
-        transform: none !important;
-    }    
-        /* --- Hides Buttons --- */
+        }          
+    /* --- Hides Buttons --- */
     .btn-container {
         display: none;
     }
+    /* --- Fixes bug w/ Carousel ---  */
+    .carousel-slide {
+        transition: none !important;
+        transform: none !important;
+    }
+}
+/* About Page --- Mobile */
+#aboutContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    width: 85%;
 }
 
-/* --- Carousel Gallery (Desktop View) --- */
-@media screen and (min-width: 650px) {
+.bio_title {
+    margin-left: 4%;
+    margin-top: 10px;
+}
+
+.bio {
+    margin-left: 4%;
+
+}
+
+.selfie {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320.75px;
+    height: 428.94px;
+    border: solid   rgb(39, 39, 39)   1px;
+    box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
+}
+
+/* Contact Page --- Mobile */
+.contact_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+}
+
+.text_container {
+    margin-right: 7.5%;
+    width: 450px;
+}
+
+.contact_label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact_text {
+    font-size: 1.075rem;
+    margin-left: 7.5%;
+    margin-top: -3.5%;
+    font-style: oblique;
+}
+
+form {
+    width: 450px;
+    margin-right: 7.5%;
+}
+
+input[type="text"] {
+    margin-bottom: 2%;
+    border: 2px solid rgb(39, 39, 39);
+    padding: 12px;
+    width: 75%;
+}
+
+textarea {
+    resize: none;
+    border: solid 2px rgb(39, 39, 39);
+    width: 358.5px;
+    height: 200px;
+}
+
+.submit {
+    float: right;
+    margin-right: 21.50%;
+    margin-top: 1%;
+    background-color:white;
+    border: solid 2px rgb(39, 39, 39);
+    width: 15%;
+    height: auto;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: skyblue;
+}
+
+/* --- 651 to 900 Pixel Changes --- */
+@media screen and (min-width: 651px) {
+/* --- Navigation Menu for Desktop / Tablet --- */
+    .nav_links {
+        display: block;
+        margin-bottom: 0%;
+    }
+    
+    .nav_links li {
+        display: inline-flex;
+    } 
+    
+    .link  {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0px 0px 0px 10px;
+    }
+    
+    .link:hover {
+        color:rgb(136, 241, 255);
+    }
+/* --- Hides Mobile Nav --- */
+    .menuBtn {
+        display: none;
+    }
+
+    #myLinks {
+        display: none !important;
+    }
+/* --- Styling for Carousel / Images for Home Page --- */
     .carousel-container{
         display: flex;
         width: 85%;
@@ -110,163 +230,45 @@ body {
     #nextBtn {
         margin-right: 1.5%;
     }
-
-
 }
 
-/* --- Here for "About" page */
-#aboutContainer {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2.5%;
-    width: 85%;
-}
+/* --- Changes 900 to 1500 Pixel --- */
+@media screen and (min-width: 900px) {
 
-.bio_title {
-    margin-left: 4%;
-    margin-top: 0px;
-}
-
-.bio {
-    margin-left: 4%;
-
-}
-
-.selfie {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 320.75px;
-    height: 428.94px;
-    border: solid   rgb(39, 39, 39)   1px;
-    box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
+/* --- About Page --- */
+    #aboutContainer {
+        flex-direction: row;
     }
 
-/* --- Media Query for About --- */
- @media screen and (max-width: 900px) {
-     #aboutContainer {
-         flex-direction: column;
-     }
-
-     .bio_title {
-         margin-top: 5%;
-     }
- }   
-
-/* --- Contact Page Stuff -- */
-.contact_container {
-    display: flex;
-    flex-direction: row;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2.5%;
-}
-
-.text_container {
-    margin-right: 7.5%;
-}
-
-.contact_label {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.contact_text {
-    font-size: 1.15rem;
-    margin-left: 15%;
-    margin-top: -3.5%;
-    font-style: oblique;
-}
-
-form {
-    width: 60%;
-    margin-right: 7.5%;
-}
-
-input[type="text"] {
-    margin-bottom: 2%;
-    border: 2px solid rgb(39, 39, 39);
-    padding: 12px;
-    width: 75%;
-}
-
-textarea {
-    resize: none;
-    border: solid 2px rgb(39, 39, 39);
-    width: 77.5%;
-    height: 200px;
-}
-
-.submit {
-    float: right;
-    margin-right: 21.50%;
-    margin-top: 1%;
-    background-color:white;
-    border: solid 2px rgb(39, 39, 39);
-    width: 15%;
-    height: auto;
-}
-
-.submit:hover {
-    cursor: pointer;
-    background-color: skyblue;
-}
-
-    /* --- Media Query for Contact Page --- */
-@media screen and (max-width: 900px) {
+    .bio_title {
+        margin-top: 5%;
+    }
+/* --- Contact --- */
     .contact_container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
         width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2.5%;
-    }
-
-    .text_container {
-        width: 450px;
-    }
-
-    form {
-        width: 450px;
-    }
-
-    textarea {
-        width: 358.5px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .text_container {
-        width: 350px;
-    }
-
-    form {
-        width: 350px;
-    }
-
-    textarea {
-        width: 282.5px;
     }
 
     .contact_label {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: bold;
     }
-    
+
     .contact_text {
-        font-size: 1.075rem;
-        margin-left: 7.5%;
-        margin-top: -3.5%;
-        font-style: oblique;
+        font-size: 1.15rem;
+        margin-left: 15%;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    textarea {
+        width: 77.5%;
     }
 }
 
-
-/* --- Error Codes for Form ---  */
+/* --- Error Codes for Form --- */
 #error,
 #error2,
 #error3 {
@@ -291,50 +293,3 @@ textarea {
 .btnHide {
     visibility: hidden;
 } 
-
-/* --- Just used to debugg --- */
-.red {
-    color: red
-    background-color: red;
-}
-
-
-/* --- Mobile Navigation Menu */
-@media screen and (max-width: 650px) {
-    .nav_links {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 650px) {
-    .menuBtn {
-        display: none;
-    }
-
-    #myLinks {
-        display: none !important;
-    }
-
-}
-
-.menuBtn {
-    color: rgb(39, 39, 39);
-}
-
-#myLinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.mLink {
-    background-color: rgb(39, 39, 39);
-    border:rgb(39, 39, 39) solid 1px;
-    color: white;
-    width: 85%;
-    margin-left: 7.5%;
-    margin-bottom: .25%;
-    text-decoration: none;
-}
