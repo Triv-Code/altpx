@@ -22,7 +22,7 @@ body {
     display: none;
 }
 
-/* Home Page --- Mobile */
+/* --- Mobile Menu --- */
 .menuBtn {
     color: rgb(39, 39, 39);
 }
@@ -44,7 +44,13 @@ body {
     margin-bottom: .25%;
     text-decoration: none;
 }
-    
+
+/* --- Fixes Space between Nav / Images --- */
+ .btn-container {
+    display: none;
+}
+
+ /* --- Home Page --- */
 @media screen and (max-width: 650px) {
     /* --- .px is removed when the carousel comes into play --- */
     .px {
@@ -57,10 +63,6 @@ body {
         border: solid   rgb(39, 39, 39)   1px;
         box-shadow: 3px 3px 3px rgba(158, 157, 157, 0.438);
         }          
-    /* --- Hides Buttons --- */
-    .btn-container {
-        display: none;
-    }
     /* --- Fixes bug w/ Carousel ---  */
     .carousel-slide {
         transition: none !important;
