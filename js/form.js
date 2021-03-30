@@ -9,7 +9,8 @@ const errorMsg2 = document.getElementById('error2');    // But it only ever grab
 const errorMsg3 = document.getElementById('error3');    // I think it's fine, because of individual Validation
 const errorMsg4 = document.getElementById('error4');    // Email being different than name for example
 
-// --- Shows / Hides Error text (removes/adds hidden class)
+// --- Checks Validation & Shows / Hides Error Message 
+    // First Name
 function fnameValid() {                        
     if (!fname.value) {
         errorMsg.classList.remove("hidden");
@@ -18,7 +19,7 @@ function fnameValid() {
         errorMsg.classList.add("hidden");
     }
 }
-
+    // Last Name
 function lnameValid() {
     if (!lname.value) {
         errorMsg2.classList.remove("hidden");
@@ -27,7 +28,7 @@ function lnameValid() {
         errorMsg2.classList.add("hidden");
     }
 }
-
+    // Email
 function emailValid() {
     if (!email.value) {
         errorMsg3.classList.remove("hidden");
@@ -36,7 +37,7 @@ function emailValid() {
         errorMsg3.classList.add("hidden");
     }
 }
-
+    // Message
 function messageValid() {
     if (!message.value) {
         errorMsg4.classList.remove("hidden");

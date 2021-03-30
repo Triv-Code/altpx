@@ -112,7 +112,7 @@ body {
 
 .text_container {
     margin-right: 7.5%;
-    width: 450px;
+    width: 85%;
 }
 
 .contact_label {
@@ -266,7 +266,7 @@ textarea {
     }
 
     textarea {
-        width: 77.5%;
+        width: 79.5%;
     }
 }
 
