@@ -3,11 +3,11 @@ const form = document.querySelector('form');
 const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 const email = document.getElementById('email');
-const message = document.getElementById('subject');
-const errorMsg = document.getElementById('error');      // Tried having 1 ID to cut down on the code
-const errorMsg2 = document.getElementById('error2');    // But it only ever grabbed the 1st ID. 
-const errorMsg3 = document.getElementById('error3');    // I think it's fine, because of individual Validation
-const errorMsg4 = document.getElementById('error4');    // Email being different than name for example
+const message = document.getElementById('subject');          
+const errorMsg = document.getElementById('error');      
+const errorMsg2 = document.getElementById('error2');     
+const errorMsg3 = document.getElementById('error3');    
+const errorMsg4 = document.getElementById('error4');    
 
 // --- Checks Validation & Shows / Hides Error Message 
     // First Name

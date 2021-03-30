@@ -44,11 +44,11 @@ document.onkeydown = function(e) {
 
 // --- Hiding Button when on last image
 carouselSlide.addEventListener('transitionend', () => {
-    if (carouselImages[counter].id === 'firstClone') {          // --- Change ID if not using Loop Feature
+    if (carouselImages[counter].id === 'firstClone') {          
         nextBtn.classList.add("btnHide");
         console.log("soup"); // --- I like soup... (Debugg)
     } else if (carouselImages[counter].id === 'lastClone') {    
-        prevBtn.classList.add("btnHide");                       // --- Change ID if not using Loop Feature
+        prevBtn.classList.add("btnHide");                      
         console.log("fox"); // --- Fox can be soup... (Debugg) 
     } else {
         nextBtn.classList.remove("btnHide");
@@ -56,19 +56,3 @@ carouselSlide.addEventListener('transitionend', () => {
         console.log("panda"); // --- Pandas can be soup (Debugg)
     }
 })
-
-// ??? --- Auto transitioning on Clone imgs when it should hold. Needs Debugged --- ???
-// carouselSlide.addEventListener('transitionend', () => {
-//     if (carouselImages[counter].id === 'lastClone') {
-//         carouselSlide.style.transition = "none";
-//         counter = carouselImages.length - 2; // Debugg
-//         console.log("lastClone" + counter);
-//         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-//     }
-    // if (carouselImages[counter].id === 'firstClone') {
-    //     carouselSlide.style.transition = "none";
-    //     counter = carouselImages.length - counter;
-    //     console.log("firstClone" + counter); // Debugg
-    //     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    // }
-// })
