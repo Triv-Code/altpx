@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>altpx portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bs_test.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+    
+    <header>
+        <div class="nav_container">
+            <!-- Logo -->
+            <a href="bs_test.html"><img src="img/altpx_logo_2pxborder.jpg" class="logo"></a>
+            <!-- Desktop Navigation -->
+            <nav>
+                <ul class="nav_links">
+                    <li><button class="link" onclick="openPage(event, 'Home')">Home</button></li>
+                    <li><button class="link" onclick="openPage(event, 'About')">About</button></li>
+                    <li><button class="link" onclick="openPage(event, 'Contact')">Contact</button></li>
+                </ul>
+            </nav>
+            <!-- Mobile Menu Icon -->
+            <a href="javascript:void(0);" class="menuBtn" onclick="menu()">
+                <i class="fa fa-bars"></i></a>
+        </div>
+        <!-- Mobile Links -->
+        <div id="myLinks"  class="menuNav" style="display: none;">
+            <button class="link mLink" onclick="openPage(event, 'Home'); closeMenu()">Home</button>
+            <button class="link mLink" onclick="openPage(event, 'About'); closeMenu()">About</button>
+            <button class="link mLink" onclick="openPage(event, 'Contact'); closeMenu()">Contact</button>
+        </div>
+    </header>
+<!-- Home Page Starts Here -->
+    <!-- <div id="Home" class="pageContent" style="display:block;"> -->
+        <div id="Home" class="container pageContent" style="display:block;"> 
+            <div class="row">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner border border-dark">
+                  <div class="carousel-item active">
+                      <img src="./img/mono/Alicia.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/mono/Candace.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/mono/Kristy.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+              </div>
+            </div>  
+          </div>
+<!-- About Page Starts Here  -->
+    <div id="About" class="pageContent" style="display:none;">
+        <div id="aboutContainer"> 
+            <!-- Bio Image -->
+            <img src="img/bike_selfie.jpg" alt="Self Portrait" class="selfie">
+            <!-- Bio Text -->
+            <div>
+                <h1 class="bio_title">A Little About Myself...</h1>
+                <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse potenti nullam ac tortor vitae purus faucibus. Vitae justo eget magna fermentum iaculis eu non diam. In iaculis nunc sed augue lacus viverra vitae congue. Cursus turpis massa tincidunt dui ut ornare. Enim diam vulputate ut pharetra sit amet aliquam id. Congue mauris rhoncus aenean vel. Sit amet porttitor eget dolor morbi non. Volutpat diam ut venenatis tellus in metus. Sed risus pretium quam vulputate dignissim. Non curabitur gravida arcu ac tortor dignissim convallis aenean. </p>
+                <p class="bio"> Consectetur purus ut faucibus pulvinar. Massa massa ultricies mi quis hendrerit dolor magna eget est. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Urna porttitor rhoncus dolor purus. Fames ac turpis egestas sed tempus urna. Pulvinar etiam non quam lacus suspendisse. Senectus et netus et malesuada. Nisl suscipit adipiscing bibendum est ultricies integer. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Blandit cursus risus at ultrices mi tempus imperdiet. Id velit ut tortor pretium viverra suspendisse potenti. Mi tempus imperdiet nulla malesuada. Amet consectetur adipiscing elit ut. Adipiscing elit duis tristique sollicitudin.</p>
+            </div>
+        </div>    
+    </div>
+<!-- Contact Page Starts Here  -->
+    <div id="Contact" class="pageContent" style="display:none;">
+        <div class="contact_container">
+            
+            <div class="text_container">
+                <h3 class="contact_label">Studio Manager</h3>
+                    <h3 class="contact_text">Suze Jones</h3>
+                    <h3 class="contact_text">502 &sdot; 555 &sdot; 9598</h3>
+                    <h3 class="contact_text">Suze.Jones@altpx.com</h3>
+                <h3 class="contact_label">Studio Address</h3>
+                    <h3 class="contact_text">1717 Fake Ave &sdot; Louisville &sdot; KY 40220</h3>
+                <h3 class="contact_label">Mailing / Shipping Address</h3>
+                    <h3 class="contact_text">P.O. Box 79581 &sdot; Louisville &sdot; KY</h3>
+            </div>       
+                    
+            <form action="/action_page.php" class="contactForm" name='contact-form'>
+                    <div>   <!-- First Name-->
+                        <input type="text" class="formName" id="fname" name="name" placeholder="First Name"> 
+                            <div class="hidden" id="error">Your first name is required.</div>
+                            <!-- Last Name-->
+                        <input type="text" class="formName" id="lname" name="name" placeholder="Last Name">
+                            <div class="hidden"  id="error2">Your last name is required.</div>
+                    </div>
+                    <div>   <!-- Email -->
+                        <input type="text" class="email" id="email" name="email" placeholder="Email">
+                            <div class="hidden" id="error3">Your email is required.</div>
+                    </div>
+                    <div>   <!-- Message -->
+                        <textarea id="subject" name="message" placeholder="Message"></textarea>
+                            <div class="hidden" id="error4">Please comment above.</div>
+                    </div>
+                    <div>   <!-- Submit -->
+                        <button type="submit" value="Submit" class="submit">Submit</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>  
+    <script src="js/nav.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/form.js"></script>
+
+</body>
+</html>
